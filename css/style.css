@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Estilos generales a todas las paginas */
+.navbar{
+    z-index: 1;
+    position: fixed;
+    border-bottom: 1px solid #d3d3d3;
+    text-transform: uppercase;
+    font-size: 1vw;
+
+    grid-area: menu;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    width: 100vw;
+    height: 12vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+nav div ul{
+    list-style: none;
+
+}
+
+nav div ul li{
+    display: inline;
+    height: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-left: 1px solid #d3d3d3;
+}
+
+nav a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #808080;
+}
+
+.logo{
+    height: 10vh;
+    width: auto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.pages{
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    border-top: 1px solid #d3d3d3;
+
+    grid-area: footer;
+}
+
+.footerIcons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 20vw;
+    height: 10vmin;
+}
+.icon{
+    width: 2vw;
+    height: auto;
+}
+
+footer a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Fin estilos generales */
+
+/* Estilos index */
+
+.index{
+    display: grid;
+    grid-template-rows: 12vh 75.5vh 12vh;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    'menu'
+    'contentImage'
+    'footer';
+}
+
+.indexContentImage{
+    /* clear: right; */
+    text-align: center;
+    background-color: #f5f2c6;
+    font-size: 1.3vw;
+    font-style: italic;
+    color: #808080;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: contentImage;
+}
+
+.indexImage{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+    height: 63vh;
+    width: auto;
+    border-radius: 50% 20% / 10% 40%;
+}
+
+@media only screen and (width <= 900px){
+
+    .navbar{
+
+        font-size: 2vw;
+
+    }
+}
+/* Fin estilos index */
+
+
+/* Estilos Biografia */
+.bioImage{
+    width: 15vw;
+    height: auto;
+    display: inline-block;
+
+    grid-area: bioImage;
+}
+.bioText{
+    grid-area: bioText;
+    font-size: 1vw;
+}
+
+.bioContent{
+    /* height: 87vh; */
+    background-color: #f5f2c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    display: grid;
+    grid-template-columns: 50vw;
+    grid-template-areas: 
+    'menu menu'
+    'bioImage bioText'
+    'footer footer';
+}
+/* Fin estilos Biografia */
+
+/* Estilos Videos */
+.videosContent{
+    height: 87vh;
+    background-color: #f5f2c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Fin Estilos Videos */
+
+/* Estilos Exhibiciones */
+.exhibicionesContent{
+    height: 87vh;
+    background-color: #f5f2c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Fin Estilos Exhibiciones */
+
+/* Estilos Obras */
+.obrasContent{
+    height: 87vh;
+    background-color: #f5f2c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Fin Estilos Obras */
+
+/* Estilos Prensa */
+.prensaContent{
+    height: 87vh;
+    background-color: #f5f2c6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* Fin Estilos Obras */
