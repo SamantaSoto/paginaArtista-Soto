@@ -6,11 +6,11 @@
 
 /* Estilos generales a todas las paginas */
 .navbar {
-    z-index: 1;
-    position: fixed;
+    /* z-index: 1;
+    position: fixed; */
     border-bottom: 1px solid #d3d3d3;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
 
     grid-area: menu;
 }
@@ -36,7 +36,7 @@ nav div ul li {
     height: 2vh;
     padding-left: 2vw;
     padding-right: 2vw;
-    border-left: 1px solid #d3d3d3;
+    /* border-left: 1px solid #d3d3d3; */
 }
 
 nav a {
@@ -136,7 +136,7 @@ footer a {
 
 /* Estilos Biografia */
 
-.bio {    
+/* .bio {    
     display: grid;
     grid-template-rows: 12vh 75.5vh 12vh;
     grid-template-columns: auto auto;
@@ -144,17 +144,17 @@ footer a {
     'menu menu'
     'bioImage bioText'
     'footer footer';
-}
+} */
 .bioImage {
     width: 15vw;
     height: auto;
     padding: 1vw;
 }
-.bioImageContent {
+/* .bioImageContent {
     grid-area: bioImage;
-}
+} */
 .bioText {
-    grid-area: bioText; 
+    /* grid-area: bioText;  */
     font-size: 0.7rem; 
     padding: 0.5rem;  
 }
@@ -165,9 +165,10 @@ footer a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-
-    /* grid-area: bioContent; */
-
+}
+.row {
+    align-items: center;
+    flex-direction: column;
 }
 /* Fin estilos Biografia */
 
@@ -213,7 +214,7 @@ footer a {
 /* Fin Estilos Exhibiciones */
 
 /* Estilos Obras */
-.obras {
+/* .obras {
     display: grid;
     grid-template-rows: 12vh 75.5vh 12vh;
     grid-template-columns: 100vw;
@@ -221,6 +222,13 @@ footer a {
     'menu'
     'obrasContent'
     'footer'; 
+
+} */
+
+element.style {
+}
+.w-100 {
+    width: inherit;
 }
 .obrasContent {
     height: 87vh;
