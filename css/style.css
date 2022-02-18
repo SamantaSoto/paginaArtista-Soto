@@ -10,7 +10,7 @@
     position: fixed;
     border-bottom: 1px solid #d3d3d3;
     text-transform: uppercase;
-    font-size: 1vw;
+    font-size: 0.9rem;
 
     grid-area: menu;
 }
@@ -71,12 +71,13 @@ nav a {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 20vw;
-    height: 10vmin;
+    /* width: 20vw;
+    height: 10vmin; */
 }
 .icon {
-    width: 2vw;
+    width: 2rem;
     height: auto;
+    padding: 0.2rem;
 }
 
 footer a {
@@ -100,7 +101,13 @@ footer a {
 
 .indexContentImage {
     text-align: center;
-    background-color: #f5f2c6;
+    /* background-color: #f5f2c6; */
+    /* background-image: url(../images/Vincent_van_Gogh_-_Self-Portrait.jpg); */
+    background-repeat:no-repeat;
+    background-position-x:center;
+    background-position-y:center;
+    background-size: cover;
+    animation: changeBackgound 10s infinite;;
     font-size: 1.3vw;
     font-style: italic;
     color: #808080;
@@ -109,6 +116,10 @@ footer a {
     justify-content: center;
     align-items: center;
     grid-area: contentImage;
+}
+@keyframes changeBackgound {
+    from { background-image: url(../images/Vincent_van_Gogh_-_Self-Portrait.jpg);}
+    to { background-image: url(../images/girasoles.jpeg);}
 }
 
 .indexImage {
@@ -119,16 +130,8 @@ footer a {
     width: auto;
     border-radius: 50% 20% / 10% 40%;
 }
-
-@media only screen and (width <= 900px) {
-
-    .navbar {
-
-        font-size: 2vw;
-
-    }
-}
 /* Fin estilos index */
+
 
 
 /* Estilos Biografia */
@@ -152,8 +155,8 @@ footer a {
 }
 .bioText {
     grid-area: bioText; 
-    font-size: 1vw; 
-    padding: 5vw;  
+    font-size: 0.7rem; 
+    padding: 0.5rem;  
 }
 
 .bioContent {
@@ -250,3 +253,44 @@ footer a {
     grid-area: prensaContent;
 }
 /* Fin Estilos Obras */
+
+
+@media only screen and (max-width: 900px) {
+
+    .menu {
+
+        font-size: 0.7rem;
+
+    }
+}
+
+@media only screen and (max-width: 760px) {
+
+    .pages {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon {
+        width: 1.5rem;
+        height: auto;
+        padding: 0.1rem;
+    }
+
+    .bioContent {
+        height: 87vh;
+        background-color: #f5f2c6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+
+    }
+
+    .bioImage {
+        width: 40%;
+        height: auto;
+        padding-top: 35%;
+    }
+
+}
