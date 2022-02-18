@@ -5,7 +5,7 @@
 }
 
 /* Estilos generales a todas las paginas */
-.navbar{
+.navbar {
     z-index: 1;
     position: fixed;
     border-bottom: 1px solid #d3d3d3;
@@ -15,7 +15,7 @@
     grid-area: menu;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: row;
     align-content: space-around;
@@ -26,12 +26,12 @@
     background-color: #ffffff;
 }
 
-nav div ul{
+nav div ul {
     list-style: none;
 
 }
 
-nav div ul li{
+nav div ul li {
     display: inline;
     height: 2vh;
     padding-left: 2vw;
@@ -39,13 +39,13 @@ nav div ul li{
     border-left: 1px solid #d3d3d3;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     cursor: pointer;
     color: #808080;
 }
 
-.logo{
+.logo {
     height: 10vh;
     width: auto;
     padding-left: 2vw;
@@ -54,7 +54,7 @@ nav a{
     margin-bottom: 1vh;
 }
 
-.pages{
+.pages {
     width: 80vw;
     display: flex;
     justify-content: space-around;
@@ -66,7 +66,7 @@ nav a{
     grid-area: footer;
 }
 
-.footerIcons{
+.footerIcons {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -74,12 +74,12 @@ nav a{
     width: 20vw;
     height: 10vmin;
 }
-.icon{
+.icon {
     width: 2vw;
     height: auto;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     cursor: pointer;
 }
@@ -88,7 +88,7 @@ footer a{
 
 /* Estilos index */
 
-.index{
+.index {
     display: grid;
     grid-template-rows: 12vh 75.5vh 12vh;
     grid-template-columns: 100vw;
@@ -98,8 +98,7 @@ footer a{
     'footer';
 }
 
-.indexContentImage{
-    /* clear: right; */
+.indexContentImage {
     text-align: center;
     background-color: #f5f2c6;
     font-size: 1.3vw;
@@ -112,7 +111,7 @@ footer a{
     grid-area: contentImage;
 }
 
-.indexImage{
+.indexImage {
     margin-left: 1vw;
     margin-right: 1vw;
     margin-bottom: 1vh;
@@ -121,9 +120,9 @@ footer a{
     border-radius: 50% 20% / 10% 40%;
 }
 
-@media only screen and (width <= 900px){
+@media only screen and (width <= 900px) {
 
-    .navbar{
+    .navbar {
 
         font-size: 2vw;
 
@@ -134,29 +133,30 @@ footer a{
 
 /* Estilos Biografia */
 
-.bio{    
+.bio {    
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-rows: 12vh 75.5vh 12vh;
+    grid-template-columns: auto auto;
     grid-template-areas: 
-    'menu'
-    'bioContent'
-    'footer';
+    'menu menu'
+    'bioImage bioText'
+    'footer footer';
 }
-.bioImage{
+.bioImage {
     width: 15vw;
     height: auto;
-    /* display: inline-block; */
-
-    /* grid-area: bioImage; */
-    
+    padding: 1vw;
 }
-.bioText{
+.bioImageContent {
+    grid-area: bioImage;
+}
+.bioText {
     grid-area: bioText; 
-    font-size: 1vw;
-    
+    font-size: 1vw; 
+    padding: 5vw;  
 }
 
-.bioContent{
+.bioContent {
     height: 87vh;
     background-color: #f5f2c6;
     display: flex;
@@ -169,41 +169,84 @@ footer a{
 /* Fin estilos Biografia */
 
 /* Estilos Videos */
-.videosContent{
+.videos {
+    display: grid;
+    grid-template-rows: 12vh 75.5vh 12vh;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    'menu'
+    'videosContent'
+    'footer';
+}
+.videosContent {
     height: 87vh;
     background-color: #f5f2c6;
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    grid-area: videosContent;
 }
 /* Fin Estilos Videos */
 
 /* Estilos Exhibiciones */
-.exhibicionesContent{
+.exhibiciones {
+    display: grid;
+    grid-template-rows: 12vh 75.5vh 12vh;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    'menu'
+    'exhibicionesContent'
+    'footer';   
+}
+.exhibicionesContent {
     height: 87vh;
     background-color: #f5f2c6;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    grid-area: exhibicionesContent;
 }
 /* Fin Estilos Exhibiciones */
 
 /* Estilos Obras */
-.obrasContent{
+.obras {
+    display: grid;
+    grid-template-rows: 12vh 75.5vh 12vh;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    'menu'
+    'obrasContent'
+    'footer'; 
+}
+.obrasContent {
     height: 87vh;
     background-color: #f5f2c6;
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    grid-area: obrasContent;
 }
 /* Fin Estilos Obras */
 
 /* Estilos Prensa */
-.prensaContent{
+.prensa {
+    display: grid;
+    grid-template-rows: 12vh 75.5vh 12vh;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    'menu'
+    'prensaContent'
+    'footer';   
+}
+.prensaContent {
     height: 87vh;
     background-color: #f5f2c6;
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    grid-area: prensaContent;
 }
 /* Fin Estilos Obras */
