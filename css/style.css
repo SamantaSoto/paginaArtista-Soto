@@ -102,7 +102,6 @@ footer a{
     /* clear: right; */
     text-align: center;
     background-color: #f5f2c6;
-    animation: changeBackgound 5s infinite;
     font-size: 1.3vw;
     font-style: italic;
     color: #808080;
@@ -111,10 +110,6 @@ footer a{
     justify-content: center;
     align-items: center;
     grid-area: contentImage;
-}
-@keyframes changeBackgound {
-    from {background-color: #f5f2c6;}
-    to {background-color: lightblue;}
 }
 
 .indexImage{
@@ -138,31 +133,38 @@ footer a{
 
 
 /* Estilos Biografia */
+
+.bio{    
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    'menu'
+    'bioContent'
+    'footer';
+}
 .bioImage{
     width: 15vw;
     height: auto;
-    display: inline-block;
+    /* display: inline-block; */
 
-    grid-area: bioImage;
+    /* grid-area: bioImage; */
+    
 }
 .bioText{
-    grid-area: bioText;
+    grid-area: bioText; 
     font-size: 1vw;
+    
 }
 
 .bioContent{
-    /* height: 87vh; */
+    height: 87vh;
     background-color: #f5f2c6;
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    display: grid;
-    grid-template-columns: 50vw;
-    grid-template-areas: 
-    'menu menu'
-    'bioImage bioText'
-    'footer footer';
+    /* grid-area: bioContent; */
+
 }
 /* Fin estilos Biografia */
 
