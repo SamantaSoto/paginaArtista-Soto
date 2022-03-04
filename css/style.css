@@ -1,3 +1,275 @@
+.navbar {
+  border-bottom: 1px solid #d3d3d3;
+  text-transform: uppercase;
+  grid-area: menu;
+}
 
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  width: 100vw;
+  height: 12vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+nav div ul {
+  list-style: none;
+}
+nav div ul li {
+  display: inline;
+  height: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+nav a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #808080;
+}
+
+.logo {
+  height: 10vh;
+  width: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.pages {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Estilos generales a todas las paginas */
+/* Fin estilos generales */
+/* Estilos index */
+@keyframes "changeBackground" {
+  from {
+    background-image: url(../images/Vincent_van_Gogh_-_Self-Portrait.jpg);
+  }
+  to {
+    background-image: url(../images/autoretrato-_sombrero.jpg);
+  }
+  to {
+    background-image: url(../images/Self-Portrait_with_a_Bandaged_Ear_-_Vincent_van_Gogh.jpg);
+  }
+}
+/* Fin estilos index */
+/* Estilos Biografia */
+/* .bio {    
+    display: grid;
+    grid-template-rows: 12vh 75.5vh 12vh;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    'menu menu'
+    'bioImage bioText'
+    'footer footer';
+} */
+/* .bioImageContent {
+    grid-area: bioImage;
+} */
+/* Fin estilos Biografia */
+/* Estilos Videos */
+/* Fin Estilos Videos */
+/* Estilos Exhibiciones */
+/* Fin Estilos Exhibiciones */
+/* Estilos Obras */
+/* .obras {
+    display: grid;
+    grid-template-rows: 12vh 75.5vh 12vh;
+    grid-template-columns: 100vw;
+    grid-template-areas: 
+    'menu'
+    'obrasContent'
+    'footer'; 
+
+} */
+/* Fin Estilos Obras */
+/* Estilos Prensa */
+/* Fin Estilos Obras */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.footer {
+  border-top: 1px solid #d3d3d3;
+  grid-area: footer;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.icon {
+  width: 2rem;
+  height: auto;
+  padding: 0.2rem;
+}
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.index {
+  display: grid;
+  grid-template-rows: 12vh 75.5vh 12vh;
+  grid-template-columns: 100vw;
+  grid-template-areas: "menu" "contentImage" "footer";
+}
+
+.indexContentImage {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  animation: changeBackground 10s infinite;
+  font-size: 1.3vw;
+  font-style: italic;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: contentImage;
+}
+
+.indexImage {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 1vh;
+  height: 63vh;
+  width: auto;
+  border-radius: 50% 20%/10% 40%;
+}
+
+.bioImage {
+  width: 15vw;
+  height: auto;
+  padding: 1vw;
+}
+
+.bioText {
+  font-size: 0.7rem;
+  padding: 0.5rem;
+}
+
+.bioContent {
+  height: 87vh;
+  background-color: #f5f2c6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.row {
+  align-items: center;
+  flex-direction: column;
+}
+
+.videos {
+  display: grid;
+  grid-template-rows: 12vh 75.5vh 12vh;
+  grid-template-columns: 100vw;
+  grid-template-areas: "menu" "videosContent" "footer";
+}
+
+.videosContent {
+  height: 87vh;
+  background-color: #f5f2c6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: videosContent;
+}
+
+.exhibiciones {
+  display: grid;
+  grid-template-rows: 12vh 75.5vh 12vh;
+  grid-template-columns: 100vw;
+  grid-template-areas: "menu" "exhibicionesContent" "footer";
+}
+
+.exhibicionesContent {
+  height: 87vh;
+  background-color: #f5f2c6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: exhibicionesContent;
+}
+
+.w-100 {
+  width: inherit;
+}
+
+.obrasContent {
+  height: 87vh;
+  background-color: #f5f2c6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: obrasContent;
+}
+
+.prensa {
+  display: grid;
+  grid-template-rows: 12vh 75.5vh 12vh;
+  grid-template-columns: 100vw;
+  grid-template-areas: "menu" "prensaContent" "footer";
+}
+
+.prensaContent {
+  height: 87vh;
+  background-color: #f5f2c6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  grid-area: prensaContent;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .pages {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon {
+    width: 1.5rem;
+    height: auto;
+    padding: 0.1rem;
+  }
+
+  .bioContent {
+    height: 87vh;
+    background-color: #f5f2c6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .bioImage {
+    width: 40%;
+    height: auto;
+    padding-top: 35%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
